@@ -42,7 +42,7 @@ def checkfromgeneratedfile():
     #print('Generation completed in', time.time() - _genstime, 'seconds')
     conflicts = {}
     inf = open('strings.txt', 'r')
-    ouf = open('output.txt', 'w')
+    ouf = open('REGEXoutput.txt', 'w')
     _starttime = time.time()
     _crct = 0
     while True:
