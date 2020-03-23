@@ -16,7 +16,7 @@ import os.path
 
 def check(_str):
     _str1 = _str.strip(' ')
-    _reg = r'(?i)^(int|short|long)\s+([a-z]([a-z0-9]){0,15})\[([1-9][0-9]{0,8})?'
+    _reg = r'(?i)^(int|short|long)\s+([a-z]([a-z0-9]){0,15})\[([0-9]{0,8}[1-9])?'
     _reg += r'\]\=\{((\-{0,1}[0-9]+\,)*(\-{0,1}[0-9]+))?\}$'
     _res = re.match(_reg, _str1)
     if _res is not None:
@@ -49,7 +49,7 @@ def checkfromgeneratedfile():
         _string = inf.readline()
         if not _string:
             break
-        _reg = r'(?i)^(int|short|long)\s+([a-z]([a-z0-9]){0,15})\[([1-9][0-9]{0,8})?'
+        _reg = r'(?i)^(int|short|long)\s+([a-z]([a-z0-9]){0,15})\[([0-9]{0,8}[1-9])?'
         _reg += r'\]\=\{((\-{0,1}[0-9]+\,)*(\-{0,1}[0-9]+))?\}$'
         _str = _string.strip(' ')
         _res = re.match(_reg, _str)

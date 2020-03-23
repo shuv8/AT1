@@ -1,3 +1,6 @@
 Number of strings: 100000
 Analyzing with RegEx completed in 0.3919808864593506 seconds
 Analyzing with SMC completed in 18.122042417526245 seconds
+Number of strings: 100000
+Analyzing with RegEx completed in 0.41713762283325195 seconds
+Analyzing with SMC completed in 18.326769828796387 seconds
