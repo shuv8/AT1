@@ -43,8 +43,8 @@ def checkfromgeneratedfile():
     #generator.generate(_num)
     #print('Generation completed in', time.time() - _genstime, 'seconds')
     conflicts = {}
-    inf = open('strings.txt', 'r')
-    ouf = open('REGEXoutput.txt', 'w')
+    inf = open('../StringAnalyzer/strings.txt', 'r')
+    ouf = open('../StringAnalyzer/REGEXoutput.txt', 'w')
     _starttime = time.time()
     _crct = 0
     while True:
@@ -83,11 +83,11 @@ def checkfromgeneratedfile():
         if conflicts[key][1]:
             ouf.write(key + ' ' + conflicts[key][0] + '\n')
     print('Analyzing completed in', _endtime - _starttime, 'seconds')
-    if os.path.isfile('time.txt'):
-        timefile = open('time.txt', 'a')
+    if os.path.isfile('../StringAnalyzer/time.txt'):
+        timefile = open('../StringAnalyzer/time.txt', 'a')
         timefile.write('Analyzing with RegEx completed in ' + str(_endtime - _starttime) + ' seconds\n')
     else:
-        timefile = open('time.txt', 'w')
+        timefile = open('../StringAnalyzer/time.txt', 'w')
         timefile.write('Analyzing with RegEx completed in ' + str(_endtime - _starttime) + ' seconds\n')
     timefile.close()
     #print('All program completed in', time.time() - _genstime, 'seconds')

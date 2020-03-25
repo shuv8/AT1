@@ -1,4 +1,4 @@
-from StringAnalyzer import AutomataAnalyzer
+from SMC import AutomataAnalyzer
 import time
 import os.path
 
@@ -12,8 +12,8 @@ def SMCconsolecheck(str):
 
 def SMCfilecheck():
     statemachine = AutomataAnalyzer.AutomataAnalyzer()
-    inf = open('strings.txt', 'r')
-    ouf = open('SMCoutput.txt', 'w')
+    inf = open('../StringAnalyzer/strings.txt', 'r')
+    ouf = open('../StringAnalyzer/SMCoutput.txt', 'w')
     _conflicts = {}
     _starttime = time.time()
     for line in inf.readlines():
@@ -31,11 +31,11 @@ def SMCfilecheck():
     for key in _conflicts.keys():
         if _conflicts[key][1]:
             ouf.write(key + ' ' + _conflicts[key][0] + '\n')
-    if os.path.isfile('time.txt'):
-        timefile = open('time.txt', 'a')
+    if os.path.isfile('../StringAnalyzer/time.txt'):
+        timefile = open('../StringAnalyzer/time.txt', 'a')
         timefile.write('Analyzing with SMC completed in ' + str(_endtime - _starttime) + ' seconds\n')
     else:
-        timefile = open('time.txt', 'w')
+        timefile = open('../StringAnalyzer/time.txt', 'w')
         timefile.write('Analyzing with SMC completed in '+  str(_endtime - _starttime) + ' seconds\n')
     timefile.close()
     print('Analyzing with SMC completed in', _endtime - _starttime, 'seconds')

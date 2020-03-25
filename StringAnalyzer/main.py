@@ -1,6 +1,6 @@
 from StringAnalyzer import generator
-from StringAnalyzer import regex
-from StringAnalyzer import SMC
+from RegEx import regex
+from SMC import SMC
 import os.path
 
 while True:

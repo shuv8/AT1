@@ -1,4 +1,5 @@
-from StringAnalyzer import AutomataAnalyzer_sm
+from SMC import AutomataAnalyzer_sm
+
 
 class AutomataAnalyzer:
     def __init__(self):
