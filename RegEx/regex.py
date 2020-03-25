@@ -60,10 +60,10 @@ def checkfromgeneratedfile():
                 _buf = _res.group(5).split(',')
             else:
                 _buf = []
-            if _res.group(4):
+            if len(_res.group(4)):
                 _number = int(_res.group(4))
                 if _number == 0:
-                    return _str.rstrip('\n') + ' --- Incorrect\n'
+                    _number = -1
             else:
                 _number = 0
             if _number == len(_buf):

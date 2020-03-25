@@ -507,9 +507,14 @@ class MainMap_Brace1(MainMap_Default):
 
 
     def MinusS(self, fsm):
+        ctxt = fsm.getOwner()
         fsm.getState().Exit(fsm)
-        fsm.setState(MainMap.Number)
-        fsm.getState().Entry(fsm)
+        fsm.clearState()
+        try:
+            ctxt.IncLength()
+        finally:
+            fsm.setState(MainMap.Number)
+            fsm.getState().Entry(fsm)
 
 
     def SpaceS(self, fsm):

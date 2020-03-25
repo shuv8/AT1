@@ -74,7 +74,7 @@ Equal {
 
 Brace1 {
 	SpaceS					Brace1		{}
-	MinusS					Number		{}
+	MinusS					Number		{ IncLength(); }
 	ZeroS (ch: String)			Number		{ IncLength(); }
 	Digit (ch: String)			Number		{ IncLength(); }
 	Brace2S [ctxt.CheckLength()]		Brace2		{}
