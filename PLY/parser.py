@@ -35,7 +35,7 @@ class Parser:
             if self._stats.get(p[2]):
                 self._stats[p[2]][1] = True
             else:
-                self._stats[p[2]] = [p[1], False]
+                self._stats[p[2]] = [p[1].strip(), False]
 
     #def p_error(self, p):
 

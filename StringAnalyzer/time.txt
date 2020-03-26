@@ -1,12 +1,4 @@
 Number of strings: 10000
-Analyzing with RegEx completed in 0.04088926315307617 seconds
-Analyzing with SMC completed in 0.4587721824645996 seconds
-Analyzing with PLY completed in 0.2872626781463623 seconds
-Number of strings: 100000
-Analyzing with RegEx completed in 0.39594078063964844 seconds
-Analyzing with SMC completed in 4.758274078369141 seconds
-Analyzing with PLY completed in 2.852336883544922 seconds
-Number of strings: 1000000
-Analyzing with RegEx completed in 4.009277582168579 seconds
-Analyzing with SMC completed in 46.469724893569946 seconds
-Analyzing with PLY completed in 28.9057719707489 seconds
+Analyzing with RegEx completed in 0.041887760162353516 seconds
+Analyzing with SMC completed in 0.49686408042907715 seconds
+Analyzing with PLY completed in 0.30220961570739746 seconds
