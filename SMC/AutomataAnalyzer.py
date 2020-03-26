@@ -25,12 +25,20 @@ class AutomataAnalyzer:
     def Check(self, string):
         self._fsm.Start()
         for c in string:
+            if not self._isAcceptable:
+                break
             if c == '0':
                 self._fsm.ZeroS(c)
             elif c.isalpha():
                 self._fsm.Letter(c)
             elif c.isdigit():
                 self._fsm.Digit(c)
+            elif c == ' ':
+                self._fsm.SpaceS()
+            elif c == ',':
+                self._fsm.CommaS()
+            elif c == '-':
+                self._fsm.MinusS()
             elif c == '[':
                 self._fsm.SqBracket1S()
             elif c == ']':
@@ -41,12 +49,6 @@ class AutomataAnalyzer:
                 self._fsm.Brace1S()
             elif c == '}':
                 self._fsm.Brace2S()
-            elif c == ' ':
-                self._fsm.SpaceS()
-            elif c == '-':
-                self._fsm.MinusS()
-            elif c == ',':
-                self._fsm.CommaS()
             elif c == '\n':
                 self._fsm.EOS()
                 break

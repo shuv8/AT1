@@ -1,12 +1,12 @@
 Number of strings: 10000
-Analyzing with RegEx completed in 0.040921688079833984 seconds
-Analyzing with SMC completed in 1.786454677581787 seconds
-Analyzing with PLY completed in 0.2932460308074951 seconds
+Analyzing with RegEx completed in 0.04088926315307617 seconds
+Analyzing with SMC completed in 0.4587721824645996 seconds
+Analyzing with PLY completed in 0.2872626781463623 seconds
 Number of strings: 100000
-Analyzing with RegEx completed in 0.39893651008605957 seconds
-Analyzing with SMC completed in 17.92061996459961 seconds
-Analyzing with PLY completed in 2.8888168334960938 seconds
+Analyzing with RegEx completed in 0.39594078063964844 seconds
+Analyzing with SMC completed in 4.758274078369141 seconds
+Analyzing with PLY completed in 2.852336883544922 seconds
 Number of strings: 1000000
-Analyzing with RegEx completed in 3.986074686050415 seconds
-Analyzing with SMC completed in 184.71846961975098 seconds
-Analyzing with PLY completed in 28.964802265167236 seconds
+Analyzing with RegEx completed in 4.009277582168579 seconds
+Analyzing with SMC completed in 46.469724893569946 seconds
+Analyzing with PLY completed in 28.9057719707489 seconds
