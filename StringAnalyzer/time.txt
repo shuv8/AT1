@@ -1,4 +1,12 @@
+Number of strings: 1000
+Analyzing with RegEx completed in 0.495011568069458 seconds
+Analyzing with SMC completed in 0.5235984325408936 seconds
+Analyzing with PLY completed in 9.894445419311523 seconds
 Number of strings: 10000
-Analyzing with RegEx completed in 0.041887760162353516 seconds
-Analyzing with SMC completed in 0.49686408042907715 seconds
-Analyzing with PLY completed in 0.30220961570739746 seconds
+Analyzing with RegEx completed in 4.502769947052002 seconds
+Analyzing with SMC completed in 4.8832848072052 seconds
+Analyzing with PLY completed in 97.56702589988708 seconds
+Number of strings: 10000
+Analyzing with RegEx completed in 0.04288601875305176 seconds
+Analyzing with SMC completed in 0.4858119487762451 seconds
+Analyzing with PLY completed in 0.2931816577911377 seconds
